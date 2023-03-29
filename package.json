@@ -8,7 +8,8 @@
       "path": "./node_modules/commitizen-emoji"
     },
     "commitizenEmoji": {
-      "conventionalFormat": true
+      "conventionalFormat": true,
+      "skipQuestions": ["breakingBody", "issues"]
     }
   }
 }
