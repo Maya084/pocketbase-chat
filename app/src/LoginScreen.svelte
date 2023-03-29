@@ -1,5 +1,6 @@
 <script lang="ts">
   import { pocketbase, errorMessage } from "./lib/pocketbase";
+  import { navigate } from "./lib/router";
 
   let email: string;
   let password: string;
@@ -25,6 +26,7 @@
     } else {
       try {
         await pocketbase.collection("users").authWithPassword(email, password);
+        navigate('#user');
         message = "";
       } catch (error) {
         message = errorMessage(error);

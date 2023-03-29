@@ -1,8 +1,10 @@
 <script lang="ts">
   import { currentUser, errorMessage, pocketbase } from "./lib/pocketbase";
+  import { navigate } from "./lib/router";
   async function handleSignOut() {
     try {
       pocketbase.authStore.clear();
+      navigate("");
     } catch (err: any) {
       errorMessage(err);
     }
