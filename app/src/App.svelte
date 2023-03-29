@@ -1,5 +1,11 @@
 <script lang="ts">
+  import { currentUser } from "./lib/pocketbase";
   import LoginScreen from "./LoginScreen.svelte";
+  import UserScreen from "./UserScreen.svelte";
 </script>
 
-<LoginScreen />
+{#if !$currentUser}
+  <LoginScreen />
+{:else}
+  <UserScreen />
+{/if}

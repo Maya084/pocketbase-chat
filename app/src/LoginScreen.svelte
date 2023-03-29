@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { pocketbase, errorMessage } from "./pocketbase";
+  import { pocketbase, errorMessage } from "./lib/pocketbase";
 
   let email: string;
   let password: string;
