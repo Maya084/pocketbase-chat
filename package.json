@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "commitizen-emoji": "^1.0.5"
+  }
+}
