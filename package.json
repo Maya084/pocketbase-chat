@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "commitizen": "^4.3.0",
     "commitizen-emoji": "^1.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/commitizen-emoji",
+      "conventional": true
+    }
   }
 }
