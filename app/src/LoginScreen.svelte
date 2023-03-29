@@ -26,7 +26,7 @@
     } else {
       try {
         await pocketbase.collection("users").authWithPassword(email, password);
-        navigate('#user');
+        navigate('#chats');
         message = "";
       } catch (error) {
         message = errorMessage(error);
