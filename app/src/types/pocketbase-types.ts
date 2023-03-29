@@ -33,7 +33,7 @@ export type AuthSystemFields<T = never> = {
 // Record types for each collection
 
 export type ChatsRecord = {
-	users?: RecordIdString
+	users?: RecordIdString[]
 }
 
 export type MessagesRecord = {
