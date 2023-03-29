@@ -5,8 +5,10 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/commitizen-emoji",
-      "conventional": true
+      "path": "./node_modules/commitizen-emoji"
+    },
+    "commitizenEmoji": {
+      "conventionalFormat": true
     }
   }
 }
